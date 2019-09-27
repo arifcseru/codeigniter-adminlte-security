@@ -15,19 +15,49 @@ $field2 = '';
     <!-- Content Header (Page header) -->
 	
     
-    <section class="content">
+    <div class="mdc-layout-grid__inner">
     
-        <div class="row">
+        <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
             <!-- left column -->
-            <div class="col-md-8">
+            <div class="mdc-card">
+				<section class="mdc-card__primary">
+                  <h1 class="mdc-card__title mdc-card__title--large">Entity Info </h1>
+                </section>
               <!-- general form elements -->
-                
+                <section class="mdc-card__supporting-text">
+                  <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop">
+                      <div class="template-demo">
+                        <div id="demo-tf-box-wrapper">
+                          <div id="tf-box-example" class="mdc-text-field mdc-text-field--box w-100">
+                            <input required pattern=".{8,}" type="text" id="tf-box" class="mdc-text-field__input" aria-controls="name-validation-message">
+                            <label for="tf-box" class="mdc-text-field__label">Field 1</label>
+                            <div class="mdc-text-field__bottom-line"></div>
+                          </div>
+                          <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" id="name-validation-msg">
+                            Must be at least 8 characters
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop">
+                      <div class="template-demo">
+                        <div id="demo-tf-box-leading-wrapper">
+                          <div id="tf-box-leading-example" class="mdc-text-field mdc-text-field--box mdc-text-field--with-leading-icon w-100">
+                            <i class="material-icons mdc-text-field__icon" tabindex="0">event</i>
+                            <input type="text" id="tf-box-leading" class="mdc-text-field__input">
+                            <label for="tf-box-leading" class="mdc-text-field__label">Field 2</label>
+                            <div class="mdc-text-field__bottom-line"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
                 
                 
                 <div class="box box-primary">
-                    <div class="box-header">
-                        <h3 class="box-title">Enter Entity Info</h3>
-                    </div><!-- /.box-header -->
+                    
                     <!-- form start -->
                     
                     <form role="form" action="<?php echo base_url() ?>entity/create" method="post" id="createEntity" role="form">
@@ -95,7 +125,7 @@ $field2 = '';
 </div>
 </div>
 </main>		
-    </section>
+    </div>
 </div>
 
 <script src="<?php echo base_url(); ?>assets/js/editUser.js" type="text/javascript"></script>
