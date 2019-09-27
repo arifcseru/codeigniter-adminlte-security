@@ -4,8 +4,8 @@ $name = '';//$userInfo->name;
 $email = '';//$userInfo->email;
 ?>
 <div class="page-wrapper mdc-toolbar-fixed-adjust">
-	<div class="mdc-layout-grid">
 	<main class="content-wrapper">
+	<div class="mdc-layout-grid">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>

@@ -10,15 +10,10 @@ $field2 = '';
 ?>
 
 <div class="page-wrapper mdc-toolbar-fixed-adjust">
-	<div class="mdc-layout-grid">
 	<main class="content-wrapper">
+	<div class="mdc-layout-grid">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <h1>
-        <i class="fa fa-users"></i> Entity Management
-        <small>Add / Edit User</small>
-      </h1>
-    </section>
+	
     
     <section class="content">
     
