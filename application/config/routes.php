@@ -59,6 +59,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['loginMe'] = 'login/loginMe';
 $route['dashboard'] = 'user';
+$route['material'] = 'adminpanel';
 $route['post'] = 'post';
 $route['entity'] = 'entity';
 $route['logout'] = 'user/logout';
