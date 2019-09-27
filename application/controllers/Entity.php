@@ -34,8 +34,8 @@ class Entity extends BaseController {
             $data['entityList'] = $this->EntityModel->getAll();
             
             $this->global['pageTitle'] = 'CodeInsect : User Listing';
-            $this->loadViews("entity/entityList", $this->global, $data, NULL);
-            //$this->loadViews("entity/entityList", $this->global, NULL , NULL);
+            //$this->loadViews("entity/entityList", $this->global, $data, NULL);
+			$this->loadMaterialViews("entity/entityList", $this->global, $data , NULL);
         }
 		
 	}
@@ -56,7 +56,7 @@ class Entity extends BaseController {
 			); 
 			
 			$data['entity'] = $entity;
-            $this->loadViews("entity/entityForm", $this->global, $data, NULL);
+            $this->loadMaterialViews("entity/entityForm", $this->global, $data, NULL);
         }
 		
 		//$entityList = $this->getEntityList($limit);
@@ -96,7 +96,7 @@ class Entity extends BaseController {
 		$data['success'] = 'Successfully Entity Published.';
 		 $data['searchText'] = '';
             
-        $this->loadViews("entity/entityList", $this->global, $data, NULL);	
+        $this->loadMaterialViews("entity/entityList", $this->global, $data, NULL);	
 		//$this->load->view('entity/entityList', $data);
 	}
 	public function read($primaryKeyField){

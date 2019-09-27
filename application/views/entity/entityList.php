@@ -3,7 +3,9 @@ $userId = 0;//$userInfo->userId;
 $name = '';//$userInfo->name;
 $email = '';//$userInfo->email;
 ?>
-<div class="content-wrapper">
+<div class="page-wrapper mdc-toolbar-fixed-adjust">
+	<div class="mdc-layout-grid">
+	<main class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
@@ -76,6 +78,8 @@ $email = '';//$userInfo->email;
             </div>
         </div>
     </section>
+	</div>
+	</main>
 </div>
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/common.js" charset="utf-8"></script>
 <script type="text/javascript">

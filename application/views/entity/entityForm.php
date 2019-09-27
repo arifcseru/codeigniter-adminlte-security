@@ -9,7 +9,9 @@ $field1 = '';
 $field2 = '';
 ?>
 
-<div class="content-wrapper">
+<div class="page-wrapper mdc-toolbar-fixed-adjust">
+	<div class="mdc-layout-grid">
+	<main class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
@@ -94,7 +96,10 @@ $field2 = '';
                     </div>
                 </div>
             </div>
-        </div>    
+        </div>  
+</div>
+</div>
+</main>		
     </section>
 </div>
 
