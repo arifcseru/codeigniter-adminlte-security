@@ -6,7 +6,7 @@
   "dependencies": {
     "chart.js": "^2.8.0",
     "del": "^4.1.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "material-components-web": "^0.27.0",
     "mdi": "^2.2.43",
     "progressbar.js": "^1.0.1"
